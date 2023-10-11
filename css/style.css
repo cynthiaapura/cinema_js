@@ -1,0 +1,68 @@
+/* super reset css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%; /* 16 mult 62.5 = 10.000 rem*/
+    
+}
+body{
+    font: 1.6rem "Roboto Slab", sans-serif;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    background-color: #2b2a33;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: var(--color-alert);
+}
+button{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        font-size: inherit;
+}
+
+/* theme */
+header h1{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.primary-collection{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    background-color: #fff;
+}
+
+.primary-collection ul{ /* initialiser le parents ; toujours le parent qui a ces propriétés */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+    line-height: 5.0rem;
+}
